@@ -1,7 +1,9 @@
 import { useEffect, useState } from 'react'
 import { useQuery } from '@tanstack/react-query'
 import reactLogo from './assets/react.svg'
+import './typography.css'
 import './App.css'
+
 
 
 function App() {
@@ -15,7 +17,7 @@ function App() {
         .then((data) => {
           console.log(data);
           console.log(query)
-          debugger
+          // debugger
           return data
         })
         .catch(error => {
@@ -34,27 +36,38 @@ function App() {
 
   return (
     <div className='App'>
-      <h1>Joke API</h1>
-      <div>
-        {query.data?.jokes.map((joke) => {
-          if (joke.type === "single") {
-            return (
-              <div key={joke.id} className="single">
-                <p>{joke.joke}</p>
-              </div>
-            );
-          } else if (joke.type === "twopart") {
-            return (
-              <div key={joke.id} className="twopart">
-                <p>{joke.setup}</p>
-                <p>{joke.delivery}</p>
-              </div>
-            );
-          }
-        })}
+    
+        <header>
+          <div className='headingBox'>
+            <h1>Get it?</h1>
+            <h3>Larking about API</h3>
+            <p className='teaser'>Frontend assignment working with API:s in React with React Query </p>
+          </div>
+        </header>
+        <main>
+          <button className='bigBtn'>Get it!</button>
+         
+            {query.data?.jokes.map((joke) => {
+              if (joke.type === "single") {
+                return (
+                  <div key={joke.id} className="single-box">
+                    <p>{joke.joke}</p>
+                  </div>
+                );
+              } else if (joke.type === "twopart") {
+                return (
+                  <div key={joke.id} className="twopart-box">
+                    <div className='setup'><h4>{joke.setup}</h4></div>
+                    <div className='delivery'>{joke.delivery}</div>
+                  </div>
+                );
+              }
+            })}
+     
+          </main>
       </div>
-    </div>
-  )
+
+      )
 }
 
-export default App
+      export default App
