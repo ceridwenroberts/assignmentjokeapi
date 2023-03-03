@@ -84,10 +84,11 @@ h3 {
 
     color: var(--c-txt-dark);
     text-align: center;
+    margin: 0;
 }
 
 h4 {
-    font-family: 'Fredoka One', cursive;
+    font-family: 'fredoka_oneregular', cursive;
     font-style: normal;
     font-weight: 400;
     font-size: 24px;

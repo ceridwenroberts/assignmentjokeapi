@@ -9,6 +9,10 @@
   --b-radius: 10px;
 }
 
+body {
+  background-color: #E5E5E5; /*just for assignment. turn off*/
+}
+
 * {
   box-sizing: border-box;
 }
@@ -27,7 +31,7 @@
 
 #headerWrap {
   display: grid;
-  grid-template-columns: 150px 1fr 200px;
+  grid-template-columns: 200px 1fr 200px;
   /* outline: auto; */
 }
 
@@ -37,11 +41,91 @@ nav ul li {
   list-style: none;
 }
 
+nav >* {
+  font-family: 'robotoregular';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+  padding-left: 6px;
+  margin-bottom: 6px;
+
+  /* identical to box height */
+
+  color: #8FD192;
+}
+
+.navLine , a, a div {
+  display: flex;
+  align-items: center;
+  color: var(--c-pri-light);
+  text-decoration: none;
+}
+
+.navLine:nth-child(2) {
+  color:#8FD192;
+}
+
+
+.navLine:nth-child(1) > * {
+  color: var(--c-pri-dark);
+}
+
+.block.first, .elipse.first {
+background-color: var(--c-pri-dark);
+}
+
+a:link div{
+  color: var(--c-pri-light);
+}
+
+/* visited link */
+a:visited {
+  color: none;
+}
+
+/* mouse over link */
+a:hover {
+  color: var(--c-pri-med);
+  cursor: pointer;
+}
+
+/* selected link */
+a:active {
+  color: none;
+}
+
+
+
+.block {
+  width: 10px;
+  height: 26px;
+  background-color: var(--c-pri-light);
+  border-radius: 2px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -o-border-radius: 2px;
+  margin-right: 5px;
+}
+
+.elipse {
+  height: 20px;
+  width: 20px;
+  background-color: var(--c-pri-light);
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+  margin-right: 5px;
+}
+
 header {
   padding-top: 60px;
   padding-right: 100px;
   height: 444px;
-  border-bottom: 1px rgb(0, 0, 0) solid;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.4);
   width: 100%;
   padding-left: 105px;
   /* outline: auto;
@@ -74,7 +158,10 @@ main {
   padding-top: 60px;
 }
 
-
+footer {
+  padding: 5rem;
+  background-color: var(--c-pri-light);
+}
 
 .full-container {
   width: 1064px;
@@ -82,22 +169,45 @@ main {
 
 .txt-highlight {
   /* position: absolute; */
-  width: 218px;
-  height: 40px;
+  /* width: 218px;
+  height: 40px; */
   /* left: 551px;
   top: 3716px; */
   background: #8FD192;
   border-radius: 7px;
+  position: absolute;
+  width: 185px;
+  height: 40px;
+  /* left: 566px;
+top: 1767px; */
+}
+
+.divider {
+  height: 6px;
+  width: 200px;
+  padding: 2px;
+  background-color: var(--c-txt-dark);
+  opacity: 75%;
+  margin: 64px;
+  border-radius: 2px;
+  box-shadow: -11px -2px 0px 4px var(--c-pri-light);
+  -webkit-box-shadow: -11px -2px 0px 4px var(--c-pri-light);
+  -moz-box-shadow: -11px -2px 0px 4px var(--c-pri-light);
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -o-border-radius: 2px;
+
 }
 
 .bigBtn {
-  position: sticky;
-  top: 20px;
+  position: fixed;
+  bottom: 50px;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  padding: 10px 70px;
+  padding: 10px 0px;
   gap: 10px;
   /* position: absolute; */
   width: 186px;
@@ -110,7 +220,10 @@ main {
   font-weight: 500;
   font-size: 17px;
   line-height: 20px;
+  z-index: 10;
+  /* color: var(--c-txt-dark) */
 }
+
 
 .circle-frame {
   /* position: absolute; */
@@ -134,17 +247,18 @@ main {
   -ms-border-radius: 10px;
   -o-border-radius: 10px;
   width: 1064px;
-height: 400px;
-padding-top: 40px;
-padding-right: 25px;
-padding-bottom: 40px;
-padding-left: 30px;
-align-items: center;
+  height: 400px;
+  padding-top: 40px;
+  padding-right: 25px;
+  padding-bottom: 40px;
+  padding-left: 30px;
+  align-items: center;
 
-gap: 30px;
-background: #8FD192;
+  gap: 30px;
+  background: #8FD192;
 
 }
+
 /* small version
 .single-box { 
 
@@ -203,8 +317,32 @@ position: absolute;
   background: #8FD192;
   border-radius: 10px;
   position: relative;
+  font-family: 'robotobold';
+  color: var(--c-txt-dark);
+  /* font-family: 'robotobold';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center; */
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
 }
 
+.setup ::first-line,
+.delivery ::first-line {
+  font-family: 'fredoka_oneregular';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 40px;
+  text-align: center;
+  margin: bottom 10px;
+}
 
 .setup:after {
   content: '';
