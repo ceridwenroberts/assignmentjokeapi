@@ -22,15 +22,34 @@
     font-style: normal;
 }
 
-@font-face {
-    font-family: 'Fredoka One', cursive;
-    src: url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
-}
 
 @font-face {
-    font-family: 'Roboto', sans-serif;
-    src: url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+    font-family: 'fredoka_oneregular';
+    src: url('./fonts/Fredoka_One/fredokaone-regular-webfont.woff2') format('woff2'),
+        url('./fonts/Fredoka_One/fredokaone-regular-webfont.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
 }
+
+
+@font-face {
+    font-family: 'robotobold';
+    src: url('./fonts/Roboto/roboto-bold-webfont.woff2') format('woff2'),
+        url('./fonts/Roboto/roboto-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'robotoregular';
+    src: url('./fonts/Roboto/roboto-regular-webfont.woff2') format('woff2'),
+        url('./fonts/') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
 
 h1 {
     font-family: 'cinzel_decorativeblack';
@@ -45,7 +64,7 @@ h1 {
 }
 
 h2 {
-    font-family: 'Fredoka One', cursive;
+    font-family: 'fredoka_oneregular', cursive;
     font-style: normal;
     font-weight: 400;
     font-size: 48px;
@@ -56,7 +75,7 @@ h2 {
 }
 
 h3 {
-    font-family: 'Fredoka One', cursive;
+    font-family: 'fredoka_oneregular', cursive;
     font-style: normal;
     font-weight: 400;
     font-size: 36px;
@@ -78,7 +97,7 @@ h4 {
 }
 
 p {
-    font-family: 'Roboto', sans-serif;
+    font-family: robotobold;
     font-style: normal;
     font-weight: 500;
     font-size: 18px;
@@ -89,7 +108,7 @@ p {
 }
 
 .nav-txt {
-    font-family: 'Roboto', sans-serif;
+    font-family: robotoregular;
     font-style: normal;
     font-weight: 400;
     font-size: 22px;
@@ -98,7 +117,7 @@ p {
 }
 
 .teaser {
-    font-family: 'Roboto';
+    font-family: robotobold;
     font-style: normal;
     font-weight: 500;
     font-size: 20.8251px;
