@@ -6,7 +6,7 @@ import './App.css'
 // import JokeAPI from 'https://jokeapi.dev/'
 
 import Logo from './assets/Logo_MouthWings.svg'
-import Smile from './assets/smile.png'
+import Smile from './assets/Smile.png'
 import Gums from './assets/gums.svg'
 import Dentures from './assets/dentures.svg'
 import Mockup from  './assets/desktopMockup.png'
@@ -79,9 +79,10 @@ function App() {
             </div>
 
             <div className='navLine'>
-              <div className='block'></div>
+              <a link href={Mockup}> <div className='block'></div>
               <div className='elipse'></div>
               <div>Mock Image</div>
+              </a>
             </div>
             <div className='navLine'>
               <a link href='https://github.com/ceridwenroberts/assignmentjokeapi'>
