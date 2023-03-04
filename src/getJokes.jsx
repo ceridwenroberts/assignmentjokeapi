@@ -1,6 +1,3 @@
-import { useQuery } from '@tanstack/react-query'
-
-
 export function getJokes() {
     return fetch('https://v2.jokeapi.dev/joke/Any?amount=5?blacklistFlags=nsfw, religious, political, racist, sexist, explicit')
       .then((response) => response.json())

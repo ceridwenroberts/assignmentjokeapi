@@ -36,7 +36,15 @@
     font-family: 'robotobold';
     src: url('./fonts/Roboto/roboto-bold-webfont.woff2') format('woff2'),
         url('./fonts/Roboto/roboto-bold-webfont.woff') format('woff');
-    font-weight: normal;
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'robotomedium';
+    src: url('./fonts/Roboto/roboto-medium-webfont.woff2') format('woff2'),
+        url('./fonts/Roboto/roboto-medium-webfont.woff') format('woff');
+    font-weight: 500;
     font-style: normal;
 }
 
@@ -45,9 +53,10 @@
     font-family: 'robotoregular';
     src: url('./fonts/Roboto/roboto-regular-webfont.woff2') format('woff2'),
         url('./fonts/') format('woff');
-    font-weight: normal;
+    font-weight: 400;
     font-style: normal;
 }
+
 
 
 
@@ -98,7 +107,7 @@ h4 {
 }
 
 p {
-    font-family: robotobold;
+    font-family: robotomedium;
     font-style: normal;
     font-weight: 500;
     font-size: 18px;
@@ -118,7 +127,7 @@ p {
 }
 
 .teaser {
-    font-family: robotobold;
+    font-family: robotomedium;
     font-style: normal;
     font-weight: 500;
     font-size: 20.8251px;

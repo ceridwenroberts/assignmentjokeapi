@@ -3,14 +3,12 @@ import { useEffect, useState } from 'react'
 import { useQuery } from '@tanstack/react-query'
 import './typography.css'
 import './App.css'
-// import JokeAPI from 'https://jokeapi.dev/'
 
 import Logo from './assets/Logo_MouthWings.svg'
 import Smile from './assets/Smile.png'
 import Gums from './assets/gums.svg'
 import Dentures from './assets/dentures.svg'
-import Mockup from  './assets/desktopMockup.png'
-// import { getJokes } from './getJokes'
+import Mockup from './assets/desktopMockup.png'
 
 function App() {
 
@@ -20,7 +18,7 @@ function App() {
   }
 
   const query = useQuery({
-    queryKey: ['jokes'], //dependency arr
+    queryKey: ['jokes'],
     queryFn: async () => {
       return fetch('https://v2.jokeapi.dev/joke/Any?amount=5&blacklistFlags=nsfw,religious,political,racist,sexist,explicit&safe-mode&format')
         .then((response) => response.json())
@@ -53,42 +51,42 @@ function App() {
       <header>
         <div id="headerWrap">
           <nav>
-          <div className='navLine'>
-            <a link href='https://v2.jokeapi.dev/'>
-              <div className='block first'></div>
-              <div className='elipse first'></div>
-              <div>JokeAPI</div>  
-            
-            </a>
+            <div className='navLine'>
+              <a link href='https://v2.jokeapi.dev/'>
+                <div className='block first'></div>
+                <div className='elipse first'></div>
+                <div>JokeAPI</div>
+
+              </a>
             </div>
 
             <div className='navLine'>
               <a link href='https://v2.jokeapi.dev/#blacklist-flags'>
-              <div className='block'></div>
-              <div className='elipse'></div>
-              <div>Disclaimer</div>
+                <div className='block'></div>
+                <div className='elipse'></div>
+                <div>Disclaimer</div>
               </a>
             </div>
 
             <div className='navLine'>
               <a link href='https://www.figma.com/community/file/1020431678732026332'>
-              <div className='block'></div>
-              <div className='elipse'></div>
-              <div>Design Inspo</div>
+                <div className='block'></div>
+                <div className='elipse'></div>
+                <div>Design Inspo</div>
               </a>
             </div>
 
             <div className='navLine'>
               <a link href={Mockup}> <div className='block'></div>
-              <div className='elipse'></div>
-              <div>Mock Image</div>
+                <div className='elipse'></div>
+                <div>Mock Image</div>
               </a>
             </div>
             <div className='navLine'>
               <a link href='https://github.com/ceridwenroberts/assignmentjokeapi'>
-              <div className='block'></div>
-              <div className='elipse'></div>
-              <div>GitHub Repo</div>
+                <div className='block'></div>
+                <div className='elipse'></div>
+                <div>GitHub Repo</div>
               </a>
             </div>
 
@@ -132,7 +130,6 @@ function App() {
                     <div className='delivery'><p>{joke.delivery}</p></div>
                   </div>
                 </div>
-
               </>
             );
           }
