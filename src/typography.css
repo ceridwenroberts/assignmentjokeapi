@@ -1,0 +1,129 @@
+@font-face {
+    font-family: 'cinzel_decorativeblack';
+    src: url('./fonts/cinzel/cincel-webfont/cinzeldecorative-black-webfont.woff2') format('woff2'),
+        url('./fonts/cinzel/cincel-webfont/cinzeldecorative-black-webfont.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'cinzel_decorativebold';
+    src: url('./fonts/cinzel/cincel-webfont/cinzeldecorative-bold-webfont.woff2') format('woff2'),
+        url('./fonts/cinzel/cincel-webfont/cinzeldecorative-bold-webfont.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'cinzel_decorativeregular';
+    src: url('./fonts/cinzel/cincel-webfont/cinzeldecorative-regular-webfont.woff2') format('woff2'),
+        url('./fonts/cinzel/cincel-webfont/cinzeldecorative-regular-webfont.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'fredoka_oneregular';
+    src: url('./fonts/Fredoka_One/fredokaone-regular-webfont.woff2') format('woff2'),
+        url('./fonts/Fredoka_One/fredokaone-regular-webfont.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'robotobold';
+    src: url('./fonts/Roboto/roboto-bold-webfont.woff2') format('woff2'),
+        url('./fonts/Roboto/roboto-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'robotoregular';
+    src: url('./fonts/Roboto/roboto-regular-webfont.woff2') format('woff2'),
+        url('./fonts/') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+h1 {
+    font-family: 'cinzel_decorativeblack';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 58px;
+    line-height: 80px;
+    /* or 138% */
+
+    text-align: center;
+    color: var(--c-txt-dark);
+}
+
+h2 {
+    font-family: 'fredoka_oneregular', cursive;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 58px;
+    text-align: center;
+
+    color: var(--c-txt-dark);
+}
+
+h3 {
+    font-family: 'fredoka_oneregular', cursive;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 44px;
+    /* identical to box height */
+
+    color: var(--c-txt-dark);
+    text-align: center;
+    margin: 0;
+}
+
+h4 {
+    font-family: 'fredoka_oneregular', cursive;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+    color: var(--c-txt-dark);
+}
+
+p {
+    font-family: robotobold;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+
+    color: var(--c-txt-dark);
+}
+
+.nav-txt {
+    font-family: robotoregular;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 26px;
+    /* identical to box height */
+}
+
+.teaser {
+    font-family: robotobold;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20.8251px;
+    line-height: 24px;
+    text-align: center;
+
+    color: var(--c-txt-dark);
+}
